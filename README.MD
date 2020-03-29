@@ -11,3 +11,6 @@ The purposed database was built in sqlite3 and Knex, but I'd prefer work with Po
 
 ## Frontend
 The frontend is based on React and its amazing feature, the JSX. The JSX make this SPA capable of using Javascript code and HTML & CSS markup and styling, together, making the development easier and faster. This is my favourite part, where the colors meet the data, where you got to communicate to be efficient, and again... Enjoy!
+
+## Mobile
+Developed with Expo. It's my first time using this technology. It looks like be good, because it have saved me from intalling and confuguring Android SDK, which kind of hurts me (haha funny joke). The idea is to use React Native to reuse a lot of stuff brought from web development, to become the work simpler and faster.
