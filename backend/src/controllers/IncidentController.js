@@ -15,7 +15,7 @@ module.exports = {
         offset: (page - 1) * 5
       });
 
-      return res.json({incidents, count});
+      return res.json({ incidents, count });
     } catch (error) {
       console.log(error);
       res.status(400).json({ error });

@@ -11,7 +11,7 @@ module.exports = {
         return res.status(400).json(`No ONG found with this ${credential}`);
       }
 
-      return res.json({ ong: ong.name });
+      return res.json({ ong });
     } catch (error) {
       console.log(error);
       
