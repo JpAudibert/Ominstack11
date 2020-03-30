@@ -33,10 +33,10 @@ export default function Incidents() {
     setLoading(true);
 
     const response = await api.get("incidents", {
-      // params: { page }
+      params: { page }
     });
 
-    setIncidents([...incidents, ...response.data.ongs]);
+    setIncidents([...incidents, ...response.data.incidents]);
     setCount(response.data.count);
     setPage(page + 1);
     setLoading(false);
@@ -63,7 +63,7 @@ export default function Incidents() {
         style={styles.incidentsList}
         data={incidents}
         keyExtractor={incident => String(incident.id)}
-        showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={true}
         onEndReached={loadIncidents}
         onEndReachedThreshold={0.2}
         renderItem={({ item: incident }) => (
